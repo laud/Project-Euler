@@ -1,4 +1,5 @@
 from math import sqrt, factorial, pow
+from collections import Counter
 
 # Helpers
 
@@ -81,7 +82,16 @@ def problem_four():
     return largest_palindrome
 
 def problem_five():
-    pass
+    c = Counter()
+    sum = 1
+    for i in xrange(21):
+        i_c = Counter(prime_factors(i))
+        c = c | i_c
+    for k, v in dict(c).iteritems():
+        print k, v
+        sum *= int(pow(k, v))
+    return sum
+
 
 def problem_six():
     sum_of_squares = 0
@@ -218,7 +228,7 @@ def problem_forty_eight():
 
 if __name__=="__main__":
     print  'solving'
-    answer = problem_thirty_four()
+    answer = problem_five()
     print answer
     print 'done!'
 
