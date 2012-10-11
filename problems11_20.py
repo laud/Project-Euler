@@ -3,7 +3,7 @@ from utils import triangle, factors, memoize
 
 def problem_eleven(num_consecutive):
     grid = []
-    file = open('problem11.txt')
+    file = open('problem_files/problem11.txt')
     for line in file:
         grid.append(line.split())
     height = len(grid)
@@ -57,7 +57,7 @@ def problem_twelve():
 
 def problem_thirteen():
     sum = 0
-    file = open('problem13.txt')
+    file = open('problem_files/problem13.txt')
     for line in file:
         sum += long(line)
     return str(sum)[:10]
@@ -150,7 +150,7 @@ def problem_seventeen():
 
 def problem_eighteen():
     tree = []
-    with open('problem18.txt') as f:
+    with open('problem_files/problem18.txt') as f:
         for l in f:
             tree.append(l.split())
 

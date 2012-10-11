@@ -1,6 +1,6 @@
 def problem_sixty_seven():
     tree = []
-    with open('problem67.txt') as f:
+    with open('problem_files/problem67.txt') as f:
         for l in f:
             tree.append(l.split())
 
