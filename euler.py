@@ -11,7 +11,7 @@ from problems91_100 import *
 
 if __name__=="__main__":
     print  'solving'
-    print problem_seventeen()
+    print problem_twenty_two()
     print 'done!'
 
 
